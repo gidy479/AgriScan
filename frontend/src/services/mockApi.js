@@ -1,34 +1,24 @@
 export const simulateDiagnosis = async (file) => {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            // Mock random result
-            const diseases = [
-                {
-                    name: "Leaf Blight",
-                    explanation: "The AI detected irregular brown lesions with yellow halos on the leaf surface, which is characteristic of Leaf Blight fungal infection.",
-                    treatment: "Apply a copper-based fungicide and ensure proper spacing between plants to reduce humidity."
-                },
-                {
-                    name: "Healthy",
-                    explanation: "No visible signs of disease or nutrient deficiency were detected.",
-                    treatment: "Continue regular watering and monitoring."
-                },
-                {
-                    name: "Rust",
-                    explanation: "Orange-brown pustules were identified on the undersides of the leaves.",
-                    treatment: "Remove infected leaves immediately and apply sulfur-based fungicides."
-                }
-            ];
+    const formData = new FormData();
+    formData.append('file', file);
 
-            const randomStart = Math.floor(Math.random() * diseases.length);
-            const diagnosis = diseases[randomStart];
+    try {
+        // Call the real backend endpoint.
+        // The relative URL '/api/diagnose' works because we will configure a Proxy in vite.config.js
+        const response = await fetch('/api/diagnose', {
+            method: 'POST',
+            body: formData,
+        });
 
-            resolve({
-                diagnosis: diagnosis.name,
-                confidence: 0.85 + (Math.random() * 0.14),
-                explanation: diagnosis.explanation,
-                treatment: diagnosis.treatment
-            });
-        }, 2000); // 2 second delay
-    });
+        if (!response.ok) {
+            throw new Error(`API Error: ${response.statusText}`);
+        }
+
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error("Diagnosis failed:", error);
+        // Fallback for demo if backend is offline, or rethrow
+        throw error;
+    }
 };

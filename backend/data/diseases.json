@@ -1,0 +1,160 @@
+{
+    "diseases": {
+        "tomato_bacterial_spot": {
+            "name": "Tomato Bacterial Spot",
+            "symptoms": [
+                "Small, water-soaked spots on leaves",
+                "Spots turn brown and slightly raised",
+                "Fruit may have raised, scab-like spots"
+            ],
+            "treatment": [
+                "Apply copper-based bactericides",
+                "Remove infected plant debris"
+            ],
+            "prevention": "Use disease-free seeds and practice crop rotation.",
+            "pesticides": [
+                "Copper Fungicide",
+                "Agrimycin"
+            ]
+        },
+        "tomato_early_blight": {
+            "name": "Tomato Early Blight",
+            "symptoms": [
+                "Dark, concentric rings (bullseye) on lower leaves",
+                "Leaves turn yellow and drop",
+                "Stem lesions may occur"
+            ],
+            "treatment": [
+                "Apply fungicides like Chlorothalonil or Mancozeb",
+                "Improve air circulation"
+            ],
+            "prevention": "Mulch around base to prevent soil splash.",
+            "pesticides": [
+                "Daconil",
+                "Bonide Liquid Copper"
+            ]
+        },
+        "tomato_late_blight": {
+            "name": "Tomato Late Blight",
+            "symptoms": [
+                "Large, dark watery patches on leaves",
+                "White fungal growth on undersides in wet weather",
+                "Fruit turns brown and rots"
+            ],
+            "treatment": [
+                "Apply fungicides immediately (Copper or Chlorothalonil)",
+                "Remove and destroy infected plants"
+            ],
+            "prevention": "Plant resistant varieties and avoid overhead watering.",
+            "pesticides": [
+                "Fungonil",
+                "Copper Soap"
+            ]
+        },
+        "tomato_leaf_mold": {
+            "name": "Tomato Leaf Mold",
+            "symptoms": [
+                "Pale yellow spots on upper leaf surface",
+                "Olive-green dusty mold on undersides",
+                "Leaves wither and die"
+            ],
+            "treatment": [
+                "Improve ventilation in greenhouses",
+                "Apply diverse fungicides"
+            ],
+            "prevention": "Maintain lower humidity levels.",
+            "pesticides": [
+                "Revus Top",
+                "Inspire Super"
+            ]
+        },
+        "tomato_healthy": {
+            "name": "Healthy Tomato Plant",
+            "symptoms": [
+                "Vibrant green leaves",
+                "No visible lesions",
+                "Firm fruit"
+            ],
+            "treatment": [
+                "Continue regular watering and fertilization"
+            ],
+            "prevention": "Monitor for pests and diseases regularly.",
+            "pesticides": []
+        },
+        "potato_early_blight": {
+            "name": "Potato Early Blight",
+            "symptoms": [
+                "Dark brown spots with concentric rings on older leaves",
+                "Yellowing tissue around spots",
+                "Premature defoliation"
+            ],
+            "treatment": [
+                "Apply fungicides like Chlorothalonil",
+                "Remove infected plant debris"
+            ],
+            "prevention": "Rotate crops and manage irrigation.",
+            "pesticides": [
+                "Daconil",
+                "Manzate"
+            ]
+        },
+        "potato_late_blight": {
+            "name": "Potato Late Blight",
+            "symptoms": [
+                "Water-soaked spots on leaves",
+                "White fungal growth on underside",
+                "Tubers may rot"
+            ],
+            "treatment": [
+                "Apply fungicides preventatively",
+                "Destroy cull piles"
+            ],
+            "prevention": "Use certified seed potatoes.",
+            "pesticides": [
+                "Ridomil Gold",
+                "Revus"
+            ]
+        },
+        "potato_healthy": {
+            "name": "Healthy Potato Plant",
+            "symptoms": [
+                "Green, robust foliage",
+                "No visible leaf spots"
+            ],
+            "treatment": [
+                "Standard crop management"
+            ],
+            "prevention": "Maintain good soil health.",
+            "pesticides": []
+        },
+        "pepper_bacterial_spot": {
+            "name": "Pepper Bacterial Spot",
+            "symptoms": [
+                "Small, water-soaked spots on leaves",
+                "Spots turn brown with yellow halos",
+                "Raised spots on fruit"
+            ],
+            "treatment": [
+                "Copper sprays",
+                "Remove infected plants"
+            ],
+            "prevention": "Use pathogen-free seed.",
+            "pesticides": [
+                "Kocide",
+                "Basic Copper"
+            ]
+        },
+        "pepper_healthy": {
+            "name": "Healthy Bell Pepper",
+            "symptoms": [
+                "Glossy green leaves",
+                "No spots or wilting"
+            ],
+            "treatment": [
+                "Standard irrigation and nutrition"
+            ],
+            "prevention": "Regular monitoring.",
+            "pesticides": []
+        }
+    }
+}
